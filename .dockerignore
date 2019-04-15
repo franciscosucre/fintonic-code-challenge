@@ -1,0 +1,9 @@
+#excluding the node_modules directory and the .git directory
+node_modules/
+.git/
+.gitignore
+.eslintrc.json
+.prettierrc
+README.md
+.vscode
+Dockerfile
