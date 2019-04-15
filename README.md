@@ -313,5 +313,3 @@ Con Dockercompose
 ```bash
 docker-compose up
 ```
-
-## Como correr las pruebas
