@@ -12,7 +12,7 @@ module.exports = new Router()
       })
     )
   )
-  .post("/", authenticate, async (req, res) => res.json(await User.create(req.body)))
+  .post("/", async (req, res) => res.json(await User.create(req.body)))
   .get("/:id", doesUserExists, async (req, res) =>
     res.json(
       await User.findById(req.params.id, req.query.select, {

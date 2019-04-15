@@ -102,7 +102,7 @@ El usuario debe autenticarse utilizando Json Web Tokens. Esto se logra agregando
 
 ## POST /users/
 
-**Necesita Authenticación:** Si
+**Necesita Authenticación:** No
 
 **Entrada:**
 

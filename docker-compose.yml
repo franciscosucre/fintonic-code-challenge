@@ -1,6 +1,6 @@
 version: "2"
 services:
-  app:
+  fintonic-code-challenge:
     container_name: fintonic-code-challenge
     restart: always
     build: .
@@ -8,10 +8,11 @@ services:
       - "3000:3000"
     links:
       - mongo
+    environment:
+      - PORT=3000
+      - DB_URI=mongodb://mongo:27017/fintonic-code-challenge
+      - DB_NAME=fintonic-code-challenge
+      - JWT_SECRET=fintonic-code-challenge
   mongo:
     container_name: mongo
     image: mongo
-    volumes:
-      - ./data:/data/db
-    ports:
-      - "27017:27017"
